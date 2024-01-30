@@ -1,7 +1,5 @@
-import { greetUser } from '$utils/greet';
+import { initializeMapbox } from '$utils/mapbox';
 
-window.Webflow ||= [];
-window.Webflow.push(() => {
-  const name = 'John Doe';
-  greetUser(name);
+document.addEventListener('DOMContentLoaded', () => {
+  initializeMapbox();
 });
