@@ -53,6 +53,7 @@ export const initializeMapbox = () => {
     el.style.backgroundSize = 'cover';
     el.style.position = 'absolute';
     el.style.transform = 'translate(-50%, -100%)';
+    el.style.cursor = 'pointer';
 
     // Erstelle das Popup
     const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(`
